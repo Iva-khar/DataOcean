@@ -40,7 +40,7 @@ const ExportXlsx = (props) => {
     );
   }
 
-  if (count <= EXPORT_PEP_XLSX_LIMIT) {
+  if (count <= EXPORT_PEP_XLSX_LIMIT && count > 0) {
     return (
       <div onClick={openExportXlsxModal} className="flex mx-2 cursor-pointer text-gray-800">
         <Download className="w-5 h-5 mr-1 color-gray-800" />
